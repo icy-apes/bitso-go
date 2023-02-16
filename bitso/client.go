@@ -22,7 +22,7 @@ var (
 )
 
 const (
-	apiPrefix      = "https://stage.bitso.com/"
+	apiPrefix      = "https://stage.bitso.com/api/"
 	apiVersion     = "v3"
 	defaultTickets = 1
 )
