@@ -7,7 +7,7 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/xiam/bitso-go/bitso"
+	"github.com/icy-apes/bitso-go/bitso"
 )
 
 var client = bitso.NewClient(nil)

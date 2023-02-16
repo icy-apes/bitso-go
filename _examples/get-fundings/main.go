@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/xiam/bitso-go/bitso"
+	"github.com/icy-apes/bitso-go/bitso"
 )
 
 func main() {
