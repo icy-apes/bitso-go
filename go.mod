@@ -1,4 +1,4 @@
-module github.com/xiam/bitso-go
+module github.com/icy-apes/bitso-go
 
 go 1.15
 
