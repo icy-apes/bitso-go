@@ -50,3 +50,13 @@ type OrderPlacement struct {
 	Minor Monetary `json:"minor,omitempty"`
 	Price Monetary `json:"price,omitempty"`
 }
+
+type WithdrawalPlacement struct {
+	Method      string   `json:"method"`
+	Network     string   `json:"network"`
+	Protocol    string   `json:"protocol"`
+	Currency    Currency `json:"currency"`
+	Amount      string   `json:"amount"`
+	Beneficiary string   `json:"beneficiary"`
+	Clabe       string   `json:"clabe"`
+}

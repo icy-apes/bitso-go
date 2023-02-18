@@ -444,6 +444,18 @@ func (c *Client) PlaceOrder(order *OrderPlacement) (string, error) {
 	return res.Payload.OID, nil
 }
 
+// Withdraw places a buy or sell order (both limit and market orders are
+// available)
+func (c *Client) Withdraw(withdrawal *WithdrawalPlacement) (string, error) {
+	var res struct {
+		Payload Withdrawal `json:"payload"`
+	}
+	if err := c.postResponse("/withdrawals/", withdrawal, &res); err != nil {
+		return "", err
+	}
+	return res.Payload.WID, nil
+}
+
 // BurstRate returns the current burst-rate limit.
 func (c *Client) BurstRate() time.Duration {
 	return c.burstRate
